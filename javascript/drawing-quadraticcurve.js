@@ -7,6 +7,7 @@ class DrawingQuadraticCurve extends PaintFunction{
   }
 
   onMouseDown(coord, event) {
+    history.saveState(canvasReal);
     if (this.onClick === 0) {
       this.contextReal.strokeStyle = $("#colorStroke").val();
       this.contextDraft.strokeStyle = $("#colorStroke").val();
@@ -19,7 +20,6 @@ class DrawingQuadraticCurve extends PaintFunction{
       this.contextReal.moveTo(this.origX, this.origY);
       console.log("on click 0");
      
-
     }
     else if (this.onClick === 1) {
         console.log("on click 1");
@@ -27,6 +27,7 @@ class DrawingQuadraticCurve extends PaintFunction{
   }
 
   onDragging(coord, event) {
+
     if (this.onClick === 0) {
       this.endX = coord[0];
       this.endY = coord[1];
