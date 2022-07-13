@@ -1,0 +1,49 @@
+.canvas {
+  border: 4px black dotted;
+  position: absolute;
+  /* top: 80px;
+  bottom: 0px;
+  left: 600px;
+  right: 0px; */
+  align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  
+}
+
+#canvas-draft {
+  background-color: transparent;
+}
+body {
+  overflow: hidden;
+}
+#canvas-container {
+  height: 50vh;
+  width: 100%;
+  
+}
+
+
+/* creates a circle */
+.createCircle{
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+
+.createTriangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 17.3px 10px;
+  border-color: transparent transparent #8f99a3 transparent;
+}
+
+
+
+.box {
+  border-radius: 15px;
+  background-color: rgba(0, 181, 204, 1);
+}
