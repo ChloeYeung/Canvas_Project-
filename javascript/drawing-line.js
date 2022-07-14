@@ -22,6 +22,7 @@
     this.context.lineJoin = "round";
     // Width of line
     this.context.lineWidth = $("#lineWidth").val();
+    this.context.setLineDash([]);
     // Drawing the line here
     this.context.beginPath();
     this.context.moveTo(coord[0], coord[1]);

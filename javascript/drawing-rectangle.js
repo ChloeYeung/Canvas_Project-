@@ -17,7 +17,7 @@ class DrawingRectangle extends PaintFunction {
     this.contextDraft.fillStyle = fillColor;
     this.contextDraft.strokeStyle = $("#colorStroke").val();
     this.contextDraft.lineWidth = $("#lineWidth").val();
-  
+    this.contextDraft.setLineDash([]);
     this.origX = coord[0];
     this.origY = coord[1];
   }
@@ -40,6 +40,7 @@ class DrawingRectangle extends PaintFunction {
     this.contextReal.fillStyle = fillColor;
     this.contextReal.strokeStyle = $("#colorStroke").val();
     this.contextReal.lineWidth = $("#lineWidth").val();
+    this.contextReal.setLineDash([]);
     this.contextDraft.clearRect(0,0,canvasDraft.width,canvasDraft.height);
     // Commit that drawing to context real
     // Without this commit, it won't actually draw
