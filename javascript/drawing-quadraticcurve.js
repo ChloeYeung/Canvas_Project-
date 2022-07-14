@@ -9,8 +9,8 @@ class DrawingQuadraticCurve extends PaintFunction{
   onMouseDown(coord, event) {
     history.saveState(canvasReal);
     if (this.onClick === 0) {
-      this.contextReal.strokeStyle = $("#colorStroke").val();
-      this.contextDraft.strokeStyle = $("#colorStroke").val();
+      this.contextReal.strokeStyle = strokeColor;
+      this.contextDraft.strokeStyle = strokeColor;
       this.contextReal.lineWidth = $("#lineWidth").val();
       this.contextDraft.lineWidth = $("#lineWidth").val();
       this.origX = coord[0];
