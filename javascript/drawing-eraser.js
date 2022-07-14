@@ -15,7 +15,7 @@ class DrawingEraser extends PaintFunction {
         this.origY = coord[1];
 
         this.contextDraft.fillStyle = "white";
-        this.contextDraft.strokeStyle = "black";
+        this.contextDraft.strokeStyle = "#649FA1";
         this.contextDraft.beginPath();
         this.contextDraft.arc(this.origX, this.origY, 5*$("#lineWidth").val(), 0, 2 * Math.PI, false);
         this.contextDraft.fill();
