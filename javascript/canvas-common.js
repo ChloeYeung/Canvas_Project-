@@ -45,8 +45,9 @@ function change_stroke(element) {
   strokeColor = element.style.background;
 }
 
-function change_stroke_by_spectrum () {
+function change_color_by_stroke () {
   strokeColor = $("#colorStroke").val();
+  console.log(strokeColor);
 }
 
 

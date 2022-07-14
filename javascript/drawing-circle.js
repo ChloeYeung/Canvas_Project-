@@ -8,8 +8,8 @@ class DrawingCircle extends PaintFunction {
     onMouseDown(coord, event) {
        
         history.saveState(canvasReal);
-        this.contextDraft.fillStyle = fillColor
-        this.contextDraft.strokeStyle = strokeColor
+        this.contextDraft.fillStyle = fillColor;
+        this.contextDraft.strokeStyle = strokeColor;
         this.contextDraft.lineWidth = $("#lineWidth").val();
         // this.contextDraft.lineJoin = "round";
         this.contextDraft.setLineDash([]);
@@ -31,8 +31,8 @@ class DrawingCircle extends PaintFunction {
 
     onMouseUp(coord, event) {
 
-        this.contextReal.fillStyle = fillColor
-        this.contextReal.strokeStyle = strokeColor
+        this.contextReal.fillStyle = fillColor;
+        this.contextReal.strokeStyle = strokeColor;
         this.contextReal.lineWidth = $("#lineWidth").val();
         this.contextReal.setLineDash([]);
         this.contextReal.beginPath();
