@@ -1,5 +1,5 @@
 .canvas {
-  border: 6px black inset;
+  border: 6px black solid;
   position: absolute;
   /* top: 80px;
   bottom: 0px;
@@ -13,13 +13,15 @@
 
 #canvas-draft {
   background-color: transparent;
+  border: cyan;
 }
-body {
-  overflow: hidden;
-}
+
 #canvas-container {
-  height: 50vh;
-  width: 100%;
+  height: 800px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
   
 }
 
