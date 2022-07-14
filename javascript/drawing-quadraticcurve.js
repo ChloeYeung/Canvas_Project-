@@ -15,7 +15,8 @@ class DrawingQuadraticCurve extends PaintFunction{
       this.contextDraft.lineWidth = $("#lineWidth").val();
       this.origX = coord[0];
       this.origY = coord[1];
-    //   this.contextReal.beginPath();
+      this.contextReal.beginPath();
+      this.contextDraft.setLineDash([]);
       this.contextReal.setLineDash([]);
       this.contextReal.moveTo(this.origX, this.origY);
       console.log("on click 0");
