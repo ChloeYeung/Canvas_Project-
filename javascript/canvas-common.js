@@ -3,17 +3,31 @@
  * ==================================
  ***********************************************/
 
+//Original width of Canvas Real
+let changeWidth = 1100;
+
+//Reactive function of Canvas Real Event Listener on "resize" of window
+window.addEventListener("resize", function () {
+ changeWidth = window.innerWidth - 200;
+ canvasReal.width = changeWidth;
+ canvasDraft.width = changeWidth;
+});
+//Canvas REAL
 let canvasReal = document.getElementById("canvas-real");
 // HEIGHT & WIDTH OF CANVAS REAL
-canvasReal.width = 1200;
-canvasReal.height = 800;
+canvasReal.width = changeWidth;
+canvasReal.height = 600;
 let contextReal = canvasReal.getContext("2d");
+//Canvas Draft
 let canvasDraft = document.getElementById("canvas-draft");
 // HEIGHT & WIDTH OF CANVAS DRAFT
-canvasDraft.width = 1200;
-canvasDraft.height = 800;
+canvasDraft.width = changeWidth;
+canvasDraft.height = 600;
 let contextDraft = canvasDraft.getContext("2d");
 let currentFunction;
+
+
+
 
 let dragging = false;
 //Fill Color Section
