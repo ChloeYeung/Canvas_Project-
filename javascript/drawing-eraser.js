@@ -17,12 +17,12 @@ class DrawingEraser extends PaintFunction {
         this.contextDraft.fillStyle = "white";
         this.contextDraft.strokeStyle = "black";
         this.contextDraft.beginPath();
-        this.contextDraft.arc(this.origX, this.origY, 50, 0, 2 * Math.PI, false);
+        this.contextDraft.arc(this.origX, this.origY, 5*$("#lineWidth").val(), 0, 2 * Math.PI, false);
         this.contextDraft.fill();
         this.contextDraft.stroke();
 
         this.contextReal.beginPath();
-        this.contextReal.arc(coord[0], coord[1], 50, 0, 2 * Math.PI, false);
+        this.contextReal.arc(coord[0], coord[1], 5*$("#lineWidth").val(), 0, 2 * Math.PI, false);
         this.contextReal.fill();
 
     }
@@ -45,13 +45,13 @@ class DrawingEraser extends PaintFunction {
         //     coord[1] - this.origY
         //   );
         this.contextDraft.beginPath();
-        this.contextDraft.arc(coord[0], coord[1], 50, 0, 2 * Math.PI, false);
+        this.contextDraft.arc(coord[0], coord[1], 5*$("#lineWidth").val(), 0, 2 * Math.PI, false);
         this.contextDraft.stroke();
 
 
 
         this.contextReal.beginPath();
-        this.contextReal.arc(coord[0], coord[1], 50, 0, 2 * Math.PI, false);
+        this.contextReal.arc(coord[0], coord[1], 5*$("#lineWidth").val(), 0, 2 * Math.PI, false);
         this.contextReal.fill();
 
 
