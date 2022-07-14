@@ -33,7 +33,7 @@
     </div>
   </div>
   <!--Main Canvas Part -->
-  <div class="" id="canvas-container">
+  <div class="d-flex justify-content-center" id="canvas-container">
     <canvas id="canvas-real" class="canvas"></canvas>
     <canvas id="canvas-draft" class="canvas"></canvas>
   </div>
@@ -112,7 +112,7 @@
 
     <div class="colorToolbox">
 
-      <input onclick="change_color_by_spectrum()" type="color" id="colorFill" value="#ffffff">
+      <input oninput="change_color_by_spectrum()" type="color" id="colorFill" value="#ffffff">
 
       <input type="color" id="colorStroke" value="#ffffff">
 
