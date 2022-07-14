@@ -30,7 +30,7 @@ class DrawingTriangle extends PaintFunction{
         this.contextReal.lineWidth = $("#lineWidth").val();
         this.contextReal.setLineDash([]);
         this.contextReal.beginPath();
-        // this.contextReal.clearRect(0,0,canvasDraft.width,canvasDraft.height); //Can set to clear the pixels after its called
+        this.contextDraft.clearRect(0,0,canvasDraft.width,canvasDraft.height); //Can set to clear the pixels after its called
         this.contextReal.moveTo(this.origX, this.origY);
         this.contextReal.lineTo(coord[0], coord[1]);
         this.contextReal.lineTo(this.origX - [coord[0]-this.origX], coord[1]);
