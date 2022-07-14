@@ -8,7 +8,7 @@ class DrawingDottedLine extends PaintFunction{
     onMouseDown(coord, event){
         history.saveState(canvasReal);
         this.contextDraft.lineWidth = $("#lineWidth").val();
-        this.contextDraft.strokeStyle = $("#colorStroke").val();
+        this.contextDraft.strokeStyle = strokeColor;
         this.origX = coord[0];
         this.origY = coord[1];
     }
@@ -25,7 +25,7 @@ class DrawingDottedLine extends PaintFunction{
 
     onMouseUp(coord,event) {
         this.contextReal.lineWidth = $("#lineWidth").val();
-        this.contextReal.strokeStyle = $("#colorStroke").val();
+        this.contextReal.strokeStyle = strokeColor;
         this.contextReal.beginPath();
          this.contextDraft.clearRect(0,0,canvasDraft.width,canvasDraft.height); //Can set to clear the pixels after its called
         this.contextReal.setLineDash([20,5]);
