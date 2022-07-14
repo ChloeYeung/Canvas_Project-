@@ -1,3 +1,14 @@
+We are developing a canvas drawing application with HTML, CSS, and Javascript.
+
+The paint app includes four main tool areas: history record, color palette, shape box, and additional functionality.
+
+Clear, Undo, and Redo are included in the history record tool. Color plattle can be used to select the color of the stroke. The shape box is the primary drawing functionality; it includes Rectangle, Pen, Straight Line, Triangle, Circle, Dotted Line, and Quadratic Curve.
+Eventually, we add some extra features such as Erase, Save, Text, Upload, and Thickness.
+
+A color stroke box and color fill box are paired at the bottom for additional color selection.
+
+
+
 # Canvas Application :rocket:
 
 #### Tip:
