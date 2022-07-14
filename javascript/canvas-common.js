@@ -4,8 +4,14 @@
  ***********************************************/
 
 let canvasReal = document.getElementById("canvas-real");
+// HEIGHT & WIDTH OF CANVAS REAL
+canvasReal.width = 1200;
+canvasReal.height = 800;
 let contextReal = canvasReal.getContext("2d");
 let canvasDraft = document.getElementById("canvas-draft");
+// HEIGHT & WIDTH OF CANVAS DRAFT
+canvasDraft.width = 1200;
+canvasDraft.height = 800;
 let contextDraft = canvasDraft.getContext("2d");
 let currentFunction;
 
@@ -24,6 +30,7 @@ let blue = "blue";
 let red = "red";
 let grey = "grey";
 //End of Fill Color
+
 
 
 $("#canvas-draft").mousedown(function (e) {
