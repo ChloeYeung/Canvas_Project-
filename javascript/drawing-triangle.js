@@ -5,6 +5,7 @@ class DrawingTriangle extends PaintFunction{
         this.contextDraft = contextDraft;
     }
     onMouseDown(coord,event){
+        history.saveState(canvasReal);
         this.contextDraft.fillStyle = fillColor;
         this.contextDraft.strokeStyle = strokeColor;
         this.contextDraft.lineWidth = $("#lineWidth").val();

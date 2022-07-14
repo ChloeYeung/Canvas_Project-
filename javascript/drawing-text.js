@@ -45,6 +45,7 @@ class DrawingText extends PaintFunction {
     }
 
     onMouseDown(coord, event) {
+        
         history.saveState(canvasReal);
 
         this.hasInput = false;
