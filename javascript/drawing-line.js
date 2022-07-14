@@ -16,6 +16,7 @@
   // On mouse down, ensure that the pen has these features
   onMouseDown(coord, event) {
     history.saveState(canvasReal);
+   
     // Fill in the color
     this.context.strokeStyle = fillColor;
     // Kind of line

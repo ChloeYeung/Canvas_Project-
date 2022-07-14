@@ -201,6 +201,12 @@
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function (event) {
 
+       history.saveState(canvasReal);
+      contextReal.fillStyle = "white"
+      contextReal.fillRect(0,0,canvasReal.width,canvasReal.height)
+      contextReal.fillStyle = "red"
+
+
       currentFunction = new DrawingLine(contextReal);
 
 
@@ -233,8 +239,10 @@
       });
       $('#redo').click(() => {
         history.redo(canvasReal, contextReal);
+        
       });
       $("#drawing-text").click(() => {
+       
         currentFunction = new DrawingText(contextReal, contextDraft);
       })
     })
