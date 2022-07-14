@@ -11,13 +11,12 @@ class DrawingText extends PaintFunction {
     }
 
     addInput(x, y) {
-
         var input = document.createElement('input');
 
         input.type = 'text';
         input.style.position = "absolute"; // fixes el relative to page. Could use absolute.
-        input.style.left = (x-(window.innerWidth - canvasReal.width)+200) + "px";
-        input.style.top = (y-(window.innerHeight - canvasReal.height)+200) + "px" ;
+        input.style.left = (x - (window.innerWidth - canvasReal.width) + 300) + "px";
+        input.style.top = (y - (window.innerHeight - canvasReal.height) + 250) + "px";
 
         input.onkeydown = handleEnter;
 
@@ -27,14 +26,17 @@ class DrawingText extends PaintFunction {
 
         hasInput = true;
 
+        history.saveState(canvasReal);
+
+
         function handleEnter(e) {
-        
             var keyCode = e.keyCode;
             if (keyCode === 13) {
                 let ctx_text = document.getElementById('canvas-real').getContext('2d');
-                this.font = '25px sans-serif',
-                    ctx_text.font = this.font;
-
+                // this.font = `40px sans-serif`,
+                const size_text = ($("#lineWidth").val()) * 5;
+                ctx_text.font = `${size_text}px Verdana`;
+                ctx_text.fillStyle = fillColor;
                 ctx_text.fillText(this.value, x, y);
                 document.body.removeChild(this);
                 hasInput = false;
