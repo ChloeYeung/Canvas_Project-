@@ -25,11 +25,10 @@ canvasDraft.width = changeWidth;
 canvasDraft.height = 600;
 let contextDraft = canvasDraft.getContext("2d");
 let currentFunction;
-
-
-
-
 let dragging = false;
+
+
+
 //Fill Color Section
 let fillColor = "red";
 function change_color(element) {
@@ -39,6 +38,18 @@ function change_color(element) {
 function change_color_by_spectrum() {
   fillColor = $("#colorFill").val();
 }
+
+//Stroke Color Section
+let strokeColor = "black";
+function change_stroke(element) {
+  strokeColor = element.style.background;
+}
+
+function change_stroke_by_spectrum () {
+  strokeColor = $("#colorStroke").val();
+}
+
+
 
 let blue = "blue";
 let red = "red";

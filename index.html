@@ -39,12 +39,12 @@
   </div>
   <!--Bootstrap Grid for the buttons-->
   <div class="row d-flex justify-content-around text-center align-items-center py-3">
-    <div class="col-1">
+    <div class="col-lg-1 col-m-4 col-s-4 col-xs-4 mb-3">
       <div class="row">
-        <div class="col-12">
-          <button type="button" id="clear" class="btn btn-info mb-2"
+        <div class="col-lg-12 col-m-6 col-s-3">
+          <button type="button" id="clear" class="btn btn-info mb-3"
         style="width: 100%; color: rgb(240,240,240);">Clear</button>
-          <button type="button" class="btn btn-info" id="undo"
+          <button type="button" class="btn btn-info mb-3" id="undo"
             style="width:100%; color: rgb(240,240,240);">Undo</button>
           <button type="button" class="btn btn-info" id="redo"
             style="width:100%; color: rgb(240,240,240);">Redo</button>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <!-- Color ToolBox-->
-    <div class="col-2 box">
+    <div class="col-lg-3 col-m-4 col-s-6 col-xs-6 mb-5 box">
       <div class="col-12 color d-flex justify-content-between py-2 px-2">
         <!-- first row of circle-->
         <button onclick="change_color(this)" type="button" class="createCircle" style="background: blue;"
@@ -66,14 +66,18 @@
       </div>
       <!-- second row of circle-->
       <div class="col-12 color d-flex justify-content-between py-2 px-2">
-        <button type="button" class="createCircle"></button>
-        <button type="button" class="createCircle"></button>
-        <button type="button" class="createCircle"></button>
-        <button type="button" class="createCircle"></button>
+        <button onclick="change_stroke(this)" type="button" class="createCircle" style="background: blue;"
+          id="colorSelect"></button>
+        <button onclick="change_stroke(this)" type="button" class="createCircle" style="background: red;"
+          id="colorSelect"></button>
+        <button onclick="change_stroke(this)" type="button" class="createCircle" style="background: grey;"
+          id="colorSelect"></button>
+        <button onclick="change_stroke(this)" type="button" class="createCircle" style="background: black;"
+          id="colorSelect"></button>
       </div>
     </div>
     <!--Shapes Toolbox-->
-    <div class="col-2 box">
+    <div class="col-lg-3 col-m-4 col-s-6 col-xs-6 mb-5 box">
       <!-- first row -->
       <div class="col-12 color d-flex justify-content-between py-2 px-2">
         <button type="button" title="Square" class="createCircle" id="drawing-rectangle"><i class="fa-regular fa-square-full"></i></button>
@@ -90,7 +94,7 @@
       </div>
     </div>
     <!--Tools Toolbox-->
-    <div class="col-2 box">
+    <div class="col-lg-3 col-m-4 col-s-6 col-xs-6 mb-5 box">
       <!-- first row -->
       <div class="col-12 color d-flex justify-content-between py-2 px-2">
         <button type="button" title="Eraser" class="createCircle" id="drawing-eraser"><i class="fa-solid fa-eraser"></i></button>

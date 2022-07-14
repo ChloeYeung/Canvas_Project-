@@ -6,7 +6,7 @@ class DrawingTriangle extends PaintFunction{
     }
     onMouseDown(coord,event){
         this.contextDraft.fillStyle = fillColor;
-        this.contextDraft.strokeStyle = $("#colorStroke").val();
+        this.contextDraft.strokeStyle = strokeColor;
         this.contextDraft.lineWidth = $("#lineWidth").val();
 
         this.contextDraft.setLineDash([]);
@@ -26,7 +26,7 @@ class DrawingTriangle extends PaintFunction{
 
     onMouseUp(coord,event) {
         this.contextReal.fillStyle = fillColor;
-        this.contextReal.strokeStyle = $("#colorStroke").val();
+        this.contextReal.strokeStyle = strokeColor;
         this.contextReal.lineWidth = $("#lineWidth").val();
         this.contextReal.setLineDash([]);
         this.contextReal.beginPath();
