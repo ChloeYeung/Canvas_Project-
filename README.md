@@ -1,65 +1,33 @@
-We are developing a canvas drawing application with HTML, CSS, and Javascript.
-
-The paint app includes four main tool areas: history record, color palette, shape box, and additional functionality.
-
-Clear, Undo, and Redo are included in the history record tool. Color plattle can be used to select the color of the stroke. The shape box is the primary drawing functionality; it includes Rectangle, Pen, Straight Line, Triangle, Circle, Dotted Line, and Quadratic Curve.
-Eventually, we add some extra features such as Erase, Save, Text, Upload, and Thickness.
-
-A color stroke box and color fill box are paired at the bottom for additional color selection.
-
-
-
 # Canvas Application :rocket:
+## Description of the Project
 
-#### Tip:
+Canvas application was made using the Canvas API which  allow users to create shapes and also modify the shapes using colours and width. The application also includes tools such as eraser, saving canvas and uploading images directly from the local drive. The Canvas API largely focuses on 2D objects.
 
-Try removing lines of code to see how it works together. Go slow, and read the documentation. Also, looking at different examples online might be helpful!
+## User Guide
 
-#### Examples:
+Users can start using the application by selecting the specific shapes and also can fill the shapes with colors. Also has an option to change the line width and color of the stroke.
 
-- the-canvas-boys.surge.sh
-- http://canvasg2march.surge.sh/
+***Note: Please use stroke color for single line shapes such as Lines and Quadratic Curve.***
 
-### How to run this package
+There are other tools such as eraser to erase any graphic inside the canvas. Undo or Redo if you made any mistake or use Clear to reset the whole canvas. 
 
-- Make sure you clone the repository
+Also has extra features such as Saving the canvas or upload images from users local drive. 
 
-- Double click on index.html
+There are 7 shapes which user can draw on the Canvas,
+- Rectangle
+- Free Line
+- Straight Line
+- Dotted Line
+- Triangle
+- Circle
+- Quadratic Curve
+- Text Box
 
-### How it works :open_book:
+## Bugs
 
-In the javascript folder, there are various functionalities for the canvas application (please implement more, here)
+- Textbox cannot be cleared or removed
 
-- javascript
-  - canvas-common.js
-  - drawing-line.js
-  - drawing-rectangle.js
-- css
-  - style.css
-
-## Sprint :athletic_shoe:
-
-| Done? | Component                         | Priority | Estimated Time | Actual Time |
-| ----- | --------------------------------- | :------: | :------------: | :---------: |
-|       | Read Documentation                |    M     |                |             |
-|       | Write down a list of requirements |    M     |                |             |
-|       | Look over the code                |    M     |                |             |
-|       | Functionality 1: Circle           |    M     |                |             |
-|       | Functionality 2: Eraser           |    M     |                |             |
-|       | Functionality 3: (You choose!)    |    M     |                |             |
-|       | Functionality 4:                  |    M     |                |             |
-|       | Functionality 5:                  |    M     |                |             |
-|       | Functionality 6:                  |    M     |                |             |
-
-- [Further Documentation and Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
-
-## Issues and Resolutions :flashlight:
-
-**ERROR**: :gear:
-**RESOLUTION**: :key:
-
-| Issue             | Where it occurs |  Possible solution   |   Actual solution    |
-| ----------------- | :-------------: | :------------------: | :------------------: |
-| Unsure what to do |        H        | Creating a checklist | Creating a checklist |
-
-#### What is one thing that I learned from doing this project? :books:
+## Future Implementation
+- Zoom in and Zoom out functionality
+- Select tools which allows user to select and move the selected Shapes.
+- Fill tools to fill part of the shapes with colors.
